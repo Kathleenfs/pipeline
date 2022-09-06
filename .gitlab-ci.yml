@@ -10,6 +10,7 @@
   #- echo "Oi alunos"
 
   #- echo "da turma 2"
+image: maven #imagem maven que foi buscada no site hub.docker
 
 stages:
   - build
@@ -18,8 +19,7 @@ stages:
 build:
   stage: build
   script:
-    - echo "olá"
-    - echo "tudo bem?"
+    - mvn package -Dmaven.test.skip
 
 test:
   stage: test
