@@ -1,13 +1,30 @@
-job:
+#job:
 
-  script:
+ # script:
 
-  - echo "Oi alunos"
+  #- echo "Oi alunos"
 
-  - echo "da turma 2"
+ # - echo "da turma 2"
+#build:
+ # script:
+  #- echo "Oi alunos"
+
+  #- echo "da turma 2"
+
+stages:
+  - build
+  - test
+
 build:
+  stage: build
   script:
-  - echo "Oi alunos"
+    - echo "olá"
+    - echo "tudo bem?"
 
-  - echo "da turma 2"
+test:
+  stage: test
+  script:
+  - echo "bom dia!"
+  - echo "boa tarde!"
+
   
