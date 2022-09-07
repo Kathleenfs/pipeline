@@ -10,3 +10,9 @@ jobs:
     - name: roda um script shell
       run: echo "olá git actions"
 
+  test:
+    runs-on: ubuntu-20.04
+    needs: build  #informa que precisa do build um depende do outro
+    steps:
+    - name: roda um script shell
+      run: echo "olá git actions rodando"
