@@ -1,6 +1,6 @@
 name: CI_IBM
 
-on:[push]
+on: [push]
 
 jobs:
   build:
@@ -9,3 +9,4 @@ jobs:
     steps:
     - name: roda um script shell
       run: echo "olá git actions"
+
